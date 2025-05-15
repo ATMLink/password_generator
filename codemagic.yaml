@@ -2,7 +2,7 @@ workflows:
   android-debug:
     name: Android Debug APK
     environment:
-      flutter: "3.16.9" # ✅ 这样 Dart SDK 就是 3.5.0+
+      flutter: "3.19.2" # ✅ 这样 Dart SDK 就是 3.5.0+
     scripts:
       - name: Install dependencies
         script: flutter pub get
