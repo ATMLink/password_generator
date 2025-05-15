@@ -1,0 +1,12 @@
+workflows:
+  android-debug:
+    name: Build Android Debug APK
+    environment:
+      flutter: "3.16.9" # ✅ 改成你项目支持的 Flutter 版本（建议使用 Codemagic 提供的稳定版本）
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Build debug APK
+        script: flutter build apk --debug
+    artifacts:
+      - build/app/outputs/flutter-apk/app-debug.apk
